@@ -6,7 +6,7 @@ export default function GoogleLoginButton() {
   return (
     <button
       type="button"
-      onClick={() => signIn("google")}
+      onClick={() => signIn("google", { redirectTo: "/transactions" })}
       className="flex items-center justify-center gap-3 rounded-lg border px-4 py-3"
     >
       <svg
